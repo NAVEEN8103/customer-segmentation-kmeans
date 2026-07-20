@@ -310,4 +310,4 @@ The application successfully loads the trained model and provides customer segme
 
 - GitHub: [NAVEEN8103](https://github.com/NAVEEN8103)
 - Project: [Customer Segmentation Using K-Means](https://github.com/NAVEEN8103/customer-segmentation-kmeans)
-- Live Demo: [Streamlit Live Demo](https://customer-segmentation-kmeans-gji8fbbvc6tnsfv3nmwaeh5.streamlit.app/)
+- Live Demo: [Streamlit Live Demo](https://customer-segmentation-kmeans-gj8fbbvc6tsnfv3nmwaeh5.streamlit.app/)
