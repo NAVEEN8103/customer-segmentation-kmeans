@@ -1,0 +1,124 @@
+{
+  "model_name": "K-Means customer segmentation",
+  "model_version": "1.0",
+  "random_state": 42,
+  "n_clusters": 4,
+  "reference_year_for_age": 2015,
+  "features": [
+    "Income",
+    "Age",
+    "Recency",
+    "Total_Spending",
+    "NumWebPurchases",
+    "NumStorePurchases",
+    "NumWebVisitsMonth"
+  ],
+  "data_quality": {
+    "raw_rows": 2240,
+    "dropped_missing_income": 24,
+    "dropped_invalid_age_or_income": 4,
+    "model_rows": 2212
+  },
+  "silhouette_scores": {
+    "2": 0.3286,
+    "3": 0.2657,
+    "4": 0.1929,
+    "5": 0.1888,
+    "6": 0.1837,
+    "7": 0.1831,
+    "8": 0.1824
+  },
+  "distance_warning_threshold": 2.699199317539392,
+  "feature_ranges": {
+    "Income": {
+      "min": 1730.0,
+      "max": 162397.0
+    },
+    "Age": {
+      "min": 19.0,
+      "max": 75.0
+    },
+    "Recency": {
+      "min": 0.0,
+      "max": 99.0
+    },
+    "Total_Spending": {
+      "min": 5.0,
+      "max": 2525.0
+    },
+    "NumWebPurchases": {
+      "min": 0.0,
+      "max": 27.0
+    },
+    "NumStorePurchases": {
+      "min": 0.0,
+      "max": 13.0
+    },
+    "NumWebVisitsMonth": {
+      "min": 0.0,
+      "max": 20.0
+    }
+  },
+  "segments": [
+    {
+      "cluster_id": 0,
+      "Income": 60230.37642585552,
+      "Age": 50.08555133079848,
+      "Recency": 44.88783269961977,
+      "Total_Spending": 885.0247148288973,
+      "NumWebPurchases": 7.490494296577947,
+      "NumStorePurchases": 8.015209125475286,
+      "NumWebVisitsMonth": 6.138783269961977,
+      "customer_count": 526,
+      "customer_share": 0.23779385171790235,
+      "segment_name": "Premium Active",
+      "description": "High-value customers who purchase frequently across web and store channels.",
+      "recommended_action": "Use cross-sell bundles and loyalty offers to increase lifetime value."
+    },
+    {
+      "cluster_id": 1,
+      "Income": 36957.04638218924,
+      "Age": 45.61966604823748,
+      "Recency": 75.17068645640074,
+      "Total_Spending": 136.66419294990723,
+      "NumWebPurchases": 2.434137291280148,
+      "NumStorePurchases": 3.5120593692022264,
+      "NumWebVisitsMonth": 6.315398886827459,
+      "customer_count": 539,
+      "customer_share": 0.24367088607594936,
+      "segment_name": "At-Risk Browsers",
+      "description": "Lower-value customers with the longest time since purchase and comparatively high web visits.",
+      "recommended_action": "Use timely win-back messages, targeted incentives, and friction-reduction experiments."
+    },
+    {
+      "cluster_id": 2,
+      "Income": 33414.0053285968,
+      "Age": 41.89520426287744,
+      "Recency": 25.27708703374778,
+      "Total_Spending": 108.61101243339255,
+      "NumWebPurchases": 2.1474245115452932,
+      "NumStorePurchases": 3.2291296625222023,
+      "NumWebVisitsMonth": 6.630550621669627,
+      "customer_count": 563,
+      "customer_share": 0.25452079566003616,
+      "segment_name": "Low-Value Recent",
+      "description": "Lower-income, lower-spending customers who have purchased relatively recently.",
+      "recommended_action": "Nurture with entry-level offers and relevant product recommendations."
+    },
+    {
+      "cluster_id": 3,
+      "Income": 76232.49657534246,
+      "Age": 46.955479452054796,
+      "Recency": 51.49315068493151,
+      "Total_Spending": 1272.164383561644,
+      "NumWebPurchases": 4.421232876712328,
+      "NumStorePurchases": 8.419520547945206,
+      "NumWebVisitsMonth": 2.405821917808219,
+      "customer_count": 584,
+      "customer_share": 0.2640144665461121,
+      "segment_name": "Elite / VIP",
+      "description": "Highest-value customers: strongest income and total spending with low browsing activity.",
+      "recommended_action": "Offer exclusive rewards, early access, and concierge-style retention experiences."
+    }
+  ]
+}
